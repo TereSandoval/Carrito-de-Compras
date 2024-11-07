@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e6fa; /* Fondo lavanda claro */
+    color: #4b0082; /* Texto en tono índigo */
+}
+
+header {
+    background-color: #483d8b; /* Azul oscuro */
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 15px 0;
+}
+
+section {
+    background-color: #9370db; /* Azul lavanda */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+article, fieldset {
+    width: 60%;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #dcdcdc; /* Fondo gris claro */
+    border-radius: 8px;
+}
+
+fieldset {
+    width: 35%;
+    background-color: #dda0dd; /* Fondo púrpura claro */
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 1px solid #4b0082; /* Bordes índigo */
+    color: #4b0082;
+    margin-left: 10px;
+}
+
+legend {
+    padding-top: 40px;
+    font-weight: bold;
+    color: #4b0082;
+}
+
+fieldset input {
+    display: block;
+    margin: 10px auto;
+    height: 30px;
+    font-size: 1rem;
+    border: 1px solid #4b0082;
+    border-radius: 5px;
+    text-align: center;
+    color: #4b0082;
+}
+
+button {
+    width: 40%;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: #6a5acd; /* Azul pizarra */
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #483d8b; /* Cambia a azul más oscuro en hover */
+}
+
+article {
+    margin: 2px ;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+article input {
+    margin: 0 auto;
+    height: 30px;
+    width: 70px;
+    font-size: 1.2rem;
+    border: 1px solid #4b0082;
+    border-radius: 5px;
+    text-align: center;
+}
+
+article button {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+table {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+    background-color: #eee8aa; /* Fondo amarillo pastel */
+    border-radius: 8px;
+}
+
+th {
+    background-color: #8a2be2; /* Azul violeta */
+    padding: 8px 0;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+td {
+    border-bottom: 2px solid #6a5acd; /* Azul pizarra */
+    padding: 10px;
+    width: 200px;
+    color: #4b0082;
+}
+
+#titulos {
+    text-align: right;
+    color: #4b0082;
+    font-weight: bold;
+}
+
+#totales {
+    text-align: left;
+    color: #4b0082;
+    font-weight: bold;
+}
+
+.fondo {
+    background-color: #dda0dd; /* Fondo púrpura claro */
+}
+
+.texto {
+    color: #ffffff;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./JS/vue3.js"></script>
+</head>
+<body>
+    <header>
+    <h1>Carrito De Compras</h1>
+    </header>
+   
+    <section id="seccion">
+        <article>
+          <table>
+            <tr>
+              <th colspan="4">Frutas:</th>
+            </tr>
+            <tr v-for="fruta, index in frutas" :class="{fondo:fruta.cantidad}">
+              <td>
+                <button @click="fruta.cantidad++" :disabled="">+</button>
+                <input type="text" v-model.number="fruta.cantidad">
+                <button @click="fruta.cantidad--" :disabled="fruta.cantidad ==0">-</button>
+              </td>
+              <td>{{ fruta.nombre }}</td>
+              <td>$ {{ fruta.precioUnitario }}</td>
+              <td v-if="fruta.cantidad >0">$ {{montoFruta(index)}}</td>
+            </tr>
+            <td colspan="3" id="titulos">
+              <h4>Subtotal</h4>
+              <h4>IVA</h4>
+              <h4>Total:</h4>
+          </td>
+          <td id="totales">
+              <h4>{{ subtotal }}</h4>
+              <h4>{{ iva }}</h4>
+              <h4>{{ total }}</h4>
+          </td>
+          
+          </table>
+        </article>
+        <!--seccion para agregar frutas-->
+       <fieldset class="col-6">
+          <legend>Nueva Fruta</legend>
+          Nombre:<input v-model="nuevaFruta" type="text">
+          Cantidad:<input  v-model.number="nuevaCantidad" type="number">
+          Precio:<input  v-model.number="nuevoPrecio" type="number" step="0.1">
+          <Button @click="agregar">Agregar</Button>
+       </fieldset>
+    </section>
+ 
+    <script src="./JS/script.js"></script>
+  </body>
+  </html>
+  
+ 
+ 
